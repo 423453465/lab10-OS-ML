@@ -31,9 +31,9 @@ def exp(a, b):
     return a ** b
 
 def square_root(a):
-	if a < 0:
-		raise ValueError("Square root 'a' cannot be negative.")
-	return math.sqrt(a)
+    if a < 0:
+        raise ValueError("Square root 'a' cannot be negative.")
+    return math.sqrt(a)
 
 def hypotenuse(a, b):
 	return math.hypot(a, b)

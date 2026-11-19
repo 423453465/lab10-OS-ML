@@ -24,11 +24,6 @@ def div(a, b):
         raise ZeroDivisionError("Cannot divide by zero")
     return b / a
 
-def log(a, b):
-    if a <= 0 or a == 1 or b <= 0:
-        raise ValueError("Invalid logarithm input")
-    return math.log(b, a)
-
 def logarithm(a, b):
     if a <= 0:
         raise ValueError("Logarithm base 'a' must be greater than 0.")
@@ -41,5 +36,10 @@ def logarithm(a, b):
 def exp(a, b):
     return a ** b
 
-def exponent(a, b):
-    return a ** b
+def square_root(a):
+	if a < 0:
+		raise ValueError("Square root 'a' cannot be negative.")
+	return math.sqrt(a)
+
+def hypotenuse(a, b):
+	math.hypot(a, b)

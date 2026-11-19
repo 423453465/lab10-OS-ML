@@ -1,3 +1,7 @@
+# https://github.com/423453465/lab10-OS-ML
+# Partner 1: Owen Staples
+# Partner 2: Chengxi Li
+
 import math
 
 def add(a, b):
@@ -6,7 +10,13 @@ def add(a, b):
 def sub(a, b):
     return a - b
 
+def subtract(a, b):
+    return a - b
+
 def mul(a, b):
+    return a * b
+
+def multiply(a, b):
     return a * b
 
 def div(a, b):
@@ -19,22 +29,6 @@ def log(a, b):
         raise ValueError("Invalid logarithm input")
     return math.log(b, a)
 
-def exp(a, b):
-
-def add(a, b):
-    return a + b
-
-def subtract(a, b):
-    return a - b
-
-def multiply(a, b):
-    return a * b
-
-def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError("Cannot divide by zero: 'a' must not be 0.")
-    return b / a
-
 def logarithm(a, b):
     if a <= 0:
         raise ValueError("Logarithm base 'a' must be greater than 0.")
@@ -43,6 +37,9 @@ def logarithm(a, b):
     if b <= 0:
         raise ValueError("Logarithm argument 'b' must be greater than 0.")
     return math.log(b, a)
+
+def exp(a, b):
+    return a ** b
 
 def exponent(a, b):
     return a ** b

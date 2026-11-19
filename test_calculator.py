@@ -1,18 +1,20 @@
 # https://github.com/423453465/lab10-OS-ML
+# Partner 1: Owen Staples
+# Partner 2: Chengxi Li
 
 import unittest
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
     def test_multiply(self):
-        self.assertAlmostEqual(multiply(2, 3), 6)
-        self.assertAlmostEqual(multiply(-2, 3), -6)
-        self.assertAlmostEqual(multiply(0, 5), 0)
+        self.assertAlmostEqual(mul(2, 3), 6)
+        self.assertAlmostEqual(mul(-2, 3), -6)
+        self.assertAlmostEqual(mul(0, 5), 0)
 
     def test_divide(self):
-        self.assertAlmostEqual(divide(10, 2), 5)
-        self.assertAlmostEqual(divide(9, 3), 3)
-        self.assertAlmostEqual(divide(-10, 2), -5)
+        self.assertAlmostEqual(div(2, 10), 5)
+        self.assertAlmostEqual(div(3, 9), 3)
+        self.assertAlmostEqual(div(2, -10), -5)
 
     def test_log_invalid_argument(self):
         with self.assertRaises(ValueError):
